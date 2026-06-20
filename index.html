@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Clover Quiz - Black Shadow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>🍀 Black Clover Ultimate Quiz 🍀</h1>
+        <hr>
+        
+        <div id="quiz-box">
+            <p id="question-number" style="color: #45f3ff; font-weight: bold; font-size: 16px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;"></p>
+            
+            <h2 id="question">Question text goes here...</h2>
+            <div class="options-grid">
+                <button class="option-btn" onclick="checkAnswer(0)">Option 1</button>
+                <button class="option-btn" onclick="checkAnswer(1)">Option 2</button>
+                <button class="option-btn" onclick="checkAnswer(2)">Option 3</button>
+                <button class="option-btn" onclick="checkAnswer(3)">Option 4</button>
+            </div>
+        </div>
+
+        <div id="result-box" class="hidden">
+            <h2>🎉 Quiz Completed! 🎉</h2>
+            <p id="score-text">You scored 0 out of 0</p>
+            <button id="restart-btn" onclick="restartQuiz()">Play Again ⚔️</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
